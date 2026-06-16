@@ -1,0 +1,603 @@
+"""============================================================================================
+ PYTHON COMPLETE QUESTION SET — 500 Questions Across 20 Topics
+============================================================================================"""
+
+"""============================================================================================
+ Topic 1: Python Basics — Variables, Data Types & Input/Output (Questions 1–25)
+============================================================================================"""
+
+# 1.  Write a Python program to declare variables of types int, float, str, bool and print each with its type.
+# 2.  How do you accept a number from the user and print whether it is positive, negative, or zero?
+# 3.  Write a Python program to swap two variables without using a third variable.
+# 4.  How do you convert a string input to an integer and perform arithmetic on it?
+# 5.  Write a Python program to calculate the area of a rectangle using user-provided length and width.
+# 6.  How do you print a multiline string using triple quotes?
+# 7.  Write a Python program to find the size (in bytes) of different data types using sys.getsizeof().
+# 8.  How do you check the data type of a variable using type() and isinstance()?
+# 9.  Write a Python program to demonstrate implicit and explicit type conversion with examples.
+# 10. How do you print formatted output using f-strings, .format(), and % formatting?
+# 11. Write a Python program that takes two numbers as input and prints their sum, difference, product, and quotient.
+# 12. How do you read multiple values from a single input line separated by spaces?
+# 13. Write a Python program to find the simple interest given principal, rate, and time.
+# 14. How do you use the print() function with sep and end parameters?
+# 15. Write a Python program to convert temperature from Celsius to Fahrenheit and vice versa.
+# 16. How do you determine if a variable is None and handle it safely?
+# 17. Write a Python program to display the binary, octal, and hexadecimal representations of a number.
+# 18. How do you use the id() function to check if two variables point to the same object?
+# 19. Write a Python program to compute the floor division and modulus of two numbers.
+# 20. How do you assign multiple variables in a single line using tuple unpacking?
+# 21. Write a Python program to check if two strings are equal using == and the is operator, explaining the difference.
+# 22. How do you use the input() function to build a simple greeting program?
+# 23. Write a Python program to calculate the perimeter and area of a circle given its radius.
+# 24. How do you print a pattern of stars using nested print statements (without loops)?
+# 25. Write a Python program to find the maximum of three numbers using only comparison operators.
+
+"""============================================================================================
+ Topic 2: Operators & Expressions (Questions 26–50)
+============================================================================================"""
+
+# 1.  Write a Python program to demonstrate all arithmetic operators (+, -, *, /, //, %, **).
+# 2.  How do you use comparison operators (==, !=, <, >, <=, >=) to compare two values?
+# 3.  Write a Python program to demonstrate all logical operators (and, or, not) with truth table examples.
+# 4.  How do you use bitwise operators (&, |, ^, ~, <<, >>) with integer values?
+# 5.  Write a Python program to demonstrate assignment operators (=, +=, -=, *=, /=, //=, **=, %=).
+# 6.  How do you use the identity operators is and is not to compare objects?
+# 7.  Write a Python program to demonstrate membership operators in and not in on a list and string.
+# 8.  How do you evaluate operator precedence in a complex expression like 3 + 2 * 5 ** 2 - 10 / 2?
+# 9.  Write a Python program to determine if a number is divisible by both 3 and 5 using logical operators.
+# 10. How do you use the ternary (conditional) operator to assign a value based on a condition?
+# 11. Write a Python program to check if a year is a leap year using logical and arithmetic operators.
+# 12. How do you perform bitwise left and right shifts to multiply and divide by powers of 2?
+# 13. Write a Python program to swap two bits at given positions in an integer.
+# 14. How do you compute the XOR of two numbers and explain its use in toggling bits?
+# 15. Write a Python program to find the absolute difference of two numbers without using abs().
+# 16. How do you chain comparison operators (e.g., 1 < x < 10) in Python?
+# 17. Write a Python program to determine the sign of a number using the walrus operator (:=).
+# 18. How do you use augmented assignment operators inside a loop to accumulate a sum?
+# 19. Write a Python program to compute the power of a number using the ** operator and math.pow().
+# 20. How do you evaluate short-circuit behavior of and and or operators with examples?
+# 21. Write a Python program to check if a number is even or odd using the bitwise & operator.
+# 22. How do you use the // operator to compute integer division and compare it with int(a/b)?
+# 23. Write a Python program to convert a decimal number to binary using arithmetic operators only.
+# 24. How do you combine membership and logical operators to validate if a character is a vowel?
+# 25. Write a Python program to compute the result of a Boolean expression and print its truth value.
+
+"""============================================================================================
+ Topic 3: Control Flow — if, elif, else (Questions 51–75)
+============================================================================================"""
+
+# 1.  Write a Python program to check if a number is positive, negative, or zero.
+# 2.  How do you use if-elif-else to classify a student's grade (A, B, C, D, F) from a numeric score?
+# 3.  Write a Python program to find the largest among three numbers using if-elif-else.
+# 4.  How do you check if a character is a vowel or consonant?
+# 5.  Write a Python program to determine if a triangle is equilateral, isosceles, or scalene.
+# 6.  How do you use nested if statements to check if a person is eligible to vote and drive?
+# 7.  Write a Python program to find the roots of a quadratic equation using the discriminant.
+# 8.  How do you check if a number is divisible by 2, 3, or both using if-elif-else?
+# 9.  Write a Python program that acts as a simple calculator using if-elif-else for +, -, *, /.
+# 10. How do you validate user input to ensure it is within a specific range?
+# 11. Write a Python program to classify a BMI value as Underweight, Normal, Overweight, or Obese.
+# 12. How do you check if a number is a perfect number using if and a loop?
+# 13. Write a Python program to print the day name for a number 1–7 using if-elif-else (no dict/list).
+# 14. How do you implement a simple login system that checks username and password?
+# 15. Write a Python program to determine electricity billing based on unit consumption slabs.
+# 16. How do you use a ternary expression inside a print statement?
+# 17. Write a Python program to check if a given year is a leap year.
+# 18. How do you handle division by zero using a conditional check?
+# 19. Write a Python program to classify a character as uppercase, lowercase, digit, or special character.
+# 20. How do you use chained elif to implement a number-to-grade conversion table?
+# 21. Write a Python program to simulate a traffic light (Red/Yellow/Green) using if-elif-else.
+# 22. How do you determine the type of a triangle (acute, right, obtuse) given its three sides?
+# 23. Write a Python program to check if a number is between 1 and 100 using nested conditions.
+# 24. How do you use if __name__ == "__main__": and explain its purpose?
+# 25. Write a Python program to find the maximum of a list of numbers without using max().
+
+"""============================================================================================
+ Topic 4: Loops — for, while, break, continue, pass (Questions 76–100)
+============================================================================================"""
+
+# 1.  Write a Python program to print numbers from 1 to 50 using a for loop.
+# 2.  How do you use a while loop to print the multiplication table of a given number?
+# 3.  Write a Python program to find the sum of all digits in a number using a while loop.
+# 4.  How do you use break to exit a loop when a target value is found in a list?
+# 5.  Write a Python program to skip even numbers and print only odd numbers using continue.
+# 6.  How do you use pass inside a loop as a placeholder for future code?
+# 7.  Write a Python program to print the Fibonacci sequence up to n terms.
+# 8.  How do you use the range() function with start, stop, and step parameters?
+# 9.  Write a Python program to find all prime numbers between 1 and 100 using nested loops.
+# 10. How do you reverse a number using a while loop?
+# 11. Write a Python program to check if a number is an Armstrong number.
+# 12. How do you print a right-angled triangle pattern of stars using nested for loops?
+# 13. Write a Python program to find the factorial of a number using a for loop.
+# 14. How do you use enumerate() in a for loop to get both index and value?
+# 15. Write a Python program to find the GCD of two numbers using a while loop.
+# 16. How do you use the else clause with a for/while loop and when does it execute?
+# 17. Write a Python program to count vowels and consonants in a string using a loop.
+# 18. How do you flatten a nested list using nested for loops?
+# 19. Write a Python program to generate a multiplication table (1–10) using nested loops.
+# 20. How do you use zip() to iterate over two lists simultaneously in a for loop?
+# 21. Write a Python program to find the LCM of two numbers using a while loop.
+# 22. How do you implement an infinite loop with a controlled exit using break?
+# 23. Write a Python program to print Pascal's triangle up to n rows.
+# 24. How do you iterate over a dictionary using a for loop with .items(), .keys(), .values()?
+# 25. Write a Python program to count the frequency of each element in a list using a loop.
+
+"""============================================================================================
+ Topic 5: Functions & Scope (Questions 101–125)
+============================================================================================"""
+
+# 1.  Write a Python function to check if a number is prime.
+# 2.  How do you define a function with default parameter values?
+# 3.  Write a Python function that accepts *args and returns their sum.
+# 4.  How do you use **kwargs to build a function that creates a user profile dictionary?
+# 5.  Write a Python program to demonstrate the difference between local and global scope.
+# 6.  How do you use the global keyword to modify a global variable inside a function?
+# 7.  Write a Python function that returns multiple values using a tuple.
+# 8.  How do you use the nonlocal keyword inside a nested function?
+# 9.  Write a Python program to compute the factorial of a number using recursion.
+# 10. How do you define and call a lambda function to square a number?
+# 11. Write a Python program to demonstrate a higher-order function that takes a function as an argument.
+# 12. How do you use map() to apply a function to every element of a list?
+# 13. Write a Python program to use filter() to extract even numbers from a list.
+# 14. How do you use functools.reduce() to compute the product of a list of numbers?
+# 15. Write a Python function to find the nth Fibonacci number using memoization with a dictionary.
+# 16. How do you create a closure in Python and explain when to use it?
+# 17. Write a Python program to implement a recursive function to flatten a nested list.
+# 18. How do you annotate function parameters and return types using Python type hints?
+# 19. Write a Python program to implement a decorator that logs function call details.
+# 20. How do you use functools.lru_cache to speed up a recursive Fibonacci function?
+# 21. Write a Python function that accepts any mix of positional and keyword arguments.
+# 22. How do you inspect a function's docstring using the __doc__ attribute and help()?
+# 23. Write a Python program to demonstrate partial function application using functools.partial.
+# 24. How do you write a generator function using yield to generate an infinite sequence?
+# 25. Write a Python program to implement a recursive binary search function.
+
+"""============================================================================================
+ Topic 6: Strings — Methods, Slicing & Formatting (Questions 126–150)
+============================================================================================"""
+
+# 1.  Write a Python program to reverse a string without using slicing.
+# 2.  How do you check if a string is a palindrome?
+# 3.  Write a Python program to count the occurrences of each character in a string.
+# 4.  How do you split a sentence into words and rejoin them with a different separator?
+# 5.  Write a Python program to check if two strings are anagrams.
+# 6.  How do you remove all punctuation from a string using str methods?
+# 7.  Write a Python program to find the longest word in a sentence.
+# 8.  How do you use str.replace() to remove all spaces from a string?
+# 9.  Write a Python program to capitalize the first letter of every word using title() and manually.
+# 10. How do you check if a string starts or ends with a specific substring?
+# 11. Write a Python program to extract all digits from a string using isdigit().
+# 12. How do you format a float to 2 decimal places in a string using f-strings?
+# 13. Write a Python program to find all occurrences of a substring in a string using a loop.
+# 14. How do you align text (left, right, center) using str.ljust(), rjust(), and center()?
+# 15. Write a Python program to count vowels in a string (case-insensitive).
+# 16. How do you convert a string to a list of characters and back?
+# 17. Write a Python program to compress a string using run-length encoding (e.g., 'aaabb' → 'a3b2').
+# 18. How do you use string slicing to extract every other character from a string?
+# 19. Write a Python program to check if a string contains only alphabetic characters.
+# 20. How do you use textwrap.wrap() to wrap a long string at a given width?
+# 21. Write a Python program to reverse the order of words in a sentence.
+# 22. How do you strip leading/trailing whitespace and specific characters from a string?
+# 23. Write a Python program to find the most frequently occurring character in a string.
+# 24. How do you use the encode() and decode() methods to handle string bytes?
+# 25. Write a Python program to validate an email address format using string methods.
+
+"""============================================================================================
+ Topic 7: Lists & List Comprehensions (Questions 151–175)
+============================================================================================"""
+
+# 1.  Write a Python program to find the second largest element in a list.
+# 2.  How do you remove duplicate elements from a list while preserving order?
+# 3.  Write a Python program to flatten a list of lists using list comprehension.
+# 4.  How do you rotate a list by k positions to the right?
+# 5.  Write a Python program to merge two sorted lists into one sorted list.
+# 6.  How do you use list slicing to reverse a list?
+# 7.  Write a Python program to split a list into chunks of size n.
+# 8.  How do you find all common elements between two lists?
+# 9.  Write a Python program to find elements in list A that are not in list B.
+# 10. How do you sort a list of dictionaries by a specific key?
+# 11. Write a Python program to find the cumulative sum of a list.
+# 12. How do you use a list comprehension to generate squares of odd numbers up to 50?
+# 13. Write a Python program to count how many times each element appears in a list.
+# 14. How do you remove all falsy values (0, None, '', False) from a list?
+# 15. Write a Python program to transpose a matrix represented as a list of lists.
+# 16. How do you zip two lists together into a list of tuples?
+# 17. Write a Python program to find the intersection and union of two lists.
+# 18. How do you create a list of tuples from two parallel lists using zip()?
+# 19. Write a Python program to insert an element at a specific position in a list.
+# 20. How do you use bisect to insert a number into a sorted list at the correct position?
+# 21. Write a Python program to find the missing number in a list of 1 to n.
+# 22. How do you use enumerate() and list comprehension to create an index-value pair list?
+# 23. Write a Python program to group a list of elements into sublists based on a condition.
+# 24. How do you compare two lists for equality and find differing elements?
+# 25. Write a Python program to implement bubble sort and selection sort on a list.
+
+"""============================================================================================
+ Topic 8: Tuples, Sets & Frozensets (Questions 176–200)
+============================================================================================"""
+
+# 1.  Write a Python program to unpack a tuple into individual variables.
+# 2.  How do you use a tuple as a dictionary key and explain why lists cannot be used?
+# 3.  Write a Python program to swap two variables using tuple packing and unpacking.
+# 4.  How do you find the index and count of an element in a tuple?
+# 5.  Write a Python program to convert a list of tuples into a dictionary.
+# 6.  How do you use a named tuple from the collections module?
+# 7.  Write a Python program to find all unique elements across two lists using sets.
+# 8.  How do you compute the union, intersection, difference, and symmetric difference of two sets?
+# 9.  Write a Python program to check if one set is a subset or superset of another.
+# 10. How do you use a set to remove duplicates from a list?
+# 11. Write a Python program to find common elements in three sets.
+# 12. How do you iterate over a set and explain why the order is not guaranteed?
+# 13. Write a Python program to convert a frozenset to a set and vice versa.
+# 14. How do you use a frozenset as a dictionary key?
+# 15. Write a Python program to find the symmetric difference between two sets using ^ and the method.
+# 16. How do you check membership in a set vs a list and compare their time complexity?
+# 17. Write a Python program to generate all subsets of a given set using loops.
+# 18. How do you use set comprehension to build a set of squared values?
+# 19. Write a Python program to count the number of unique words in a paragraph using a set.
+# 20. How do you sort a set and explain what data structure is returned?
+# 21. Write a Python program to find elements present in the first set but not the second (difference).
+# 22. How do you update a set in place using update() and |=?
+# 23. Write a Python program to demonstrate that sets are mutable while frozensets are immutable.
+# 24. How do you use a set to implement a simple spell checker against a vocabulary list?
+# 25. Write a Python program to find all pairs of elements in a list that sum to a target using sets.
+
+"""============================================================================================
+ Topic 9: Dictionaries (Questions 201–225)
+============================================================================================"""
+
+# 1.  Write a Python program to count the frequency of each word in a sentence using a dictionary.
+# 2.  How do you merge two dictionaries using the | operator and update()?
+# 3.  Write a Python program to invert a dictionary (swap keys and values).
+# 4.  How do you use dict.get() with a default value to avoid KeyError?
+# 5.  Write a Python program to sort a dictionary by its values in descending order.
+# 6.  How do you use defaultdict from the collections module?
+# 7.  Write a Python program to group a list of words by their first letter using a dictionary.
+# 8.  How do you use Counter from collections to find the most common elements?
+# 9.  Write a Python program to build a nested dictionary representing a student's marks in subjects.
+# 10. How do you iterate over a dictionary to print formatted key-value pairs?
+# 11. Write a Python program to find all keys whose values are greater than a threshold.
+# 12. How do you use dict comprehension to create a dictionary of squares from 1 to 10?
+# 13. Write a Python program to flatten a nested dictionary into a single-level dictionary.
+# 14. How do you safely remove a key from a dictionary using pop() and del?
+# 15. Write a Python program to find the key with the maximum value in a dictionary.
+# 16. How do you use OrderedDict from collections and explain when it matters?
+# 17. Write a Python program to check if two dictionaries have the same keys.
+# 18. How do you implement a word frequency counter and print the top 5 words?
+# 19. Write a Python program to merge a list of dictionaries into one dictionary.
+# 20. How do you convert two lists (keys and values) into a dictionary using zip()?
+# 21. Write a Python program to build an inverted index: word → list of sentence indices.
+# 22. How do you use ChainMap to combine multiple dictionaries for lookup?
+# 23. Write a Python program to copy a dictionary shallowly and deeply and show the difference.
+# 24. How do you use setdefault() to safely initialize nested dictionary entries?
+# 25. Write a Python program to compute the sum of all values in a nested dictionary.
+
+"""============================================================================================
+ Topic 10: File Handling (Questions 226–250)
+============================================================================================"""
+
+# 1.  Write a Python program to create a text file and write multiple lines to it.
+# 2.  How do you read an entire file content at once using read()?
+# 3.  Write a Python program to read a file line by line and count the total number of lines.
+# 4.  How do you append new content to an existing file without overwriting it?
+# 5.  Write a Python program to count the number of words in a text file.
+# 6.  How do you use the with statement to ensure a file is properly closed?
+# 7.  Write a Python program to copy the contents of one file to another.
+# 8.  How do you read and write CSV files using the csv module?
+# 9.  Write a Python program to find and replace a word in a text file.
+# 10. How do you write a list of dictionaries to a CSV file using csv.DictWriter?
+# 11. Write a Python program to read a JSON file, modify a field, and write it back.
+# 12. How do you use os.path to check if a file exists before opening it?
+# 13. Write a Python program to list all files in a directory with their sizes using os.
+# 14. How do you delete a file and a directory safely using os.remove() and shutil.rmtree()?
+# 15. Write a Python program to read a binary file and display its bytes in hex format.
+# 16. How do you use pickle to serialize and deserialize a Python object to/from a file?
+# 17. Write a Python program to search for all lines containing a specific keyword in a file.
+# 18. How do you rename and move files using os.rename() and shutil.move()?
+# 19. Write a Python program to merge the contents of multiple text files into one.
+# 20. How do you write a log file with timestamps for each event using the logging module?
+# 21. Write a Python program to read a file in chunks to handle large files efficiently.
+# 22. How do you use pathlib.Path to perform file and directory operations?
+# 23. Write a Python program to zip multiple files into a zip archive using zipfile.
+# 24. How do you read and process a .csv file with pandas (or csv module if pandas unavailable)?
+# 25. Write a Python program to count character, word, and line frequencies in a text file.
+
+"""============================================================================================
+ Topic 11: Exception Handling (Questions 251–275)
+============================================================================================"""
+
+# 1.  Write a Python program that catches a ZeroDivisionError and prints a user-friendly message.
+# 2.  How do you use try-except-else-finally to manage file reading errors?
+# 3.  Write a Python program to handle ValueError when converting user input to an integer.
+# 4.  How do you catch multiple exceptions in a single except block?
+# 5.  Write a Python program to demonstrate raising a custom exception.
+# 6.  How do you define a custom exception class inheriting from Exception?
+# 7.  Write a Python program to use the finally block to ensure a database connection is closed.
+# 8.  How do you use assert to validate function preconditions and handle AssertionError?
+# 9.  Write a Python program to re-raise an exception after logging it.
+# 10. How do you use the else clause in a try block and when does it execute?
+# 11. Write a Python program to build a robust input loop that retries on invalid input.
+# 12. How do you chain exceptions using raise ... from ... for better error context?
+# 13. Write a Python program to handle FileNotFoundError and IOError during file operations.
+# 14. How do you use contextlib.suppress to silently ignore specific exceptions?
+# 15. Write a Python program to validate a list of numbers and collect all errors before raising.
+# 16. How do you capture the exception object and inspect its message and type?
+# 17. Write a Python program to implement a retry mechanism using a loop and exception handling.
+# 18. How do you use the warnings module to issue non-fatal warnings?
+# 19. Write a Python program to demonstrate the exception hierarchy and catch a parent exception.
+# 20. How do you handle RecursionError by setting a recursion limit with sys.setrecursionlimit()?
+# 21. Write a Python program to use exception handling to parse and validate a date string.
+# 22. How do you handle KeyError and IndexError in dictionary and list access safely?
+# 23. Write a Python program to demonstrate exception handling in a REST API response parser.
+# 24. How do you log exceptions with traceback information using the logging module?
+# 25. Write a Python program to build a safe calculator that handles all arithmetic exceptions.
+
+"""============================================================================================
+ Topic 12: Object-Oriented Programming — Classes & Objects (Questions 276–300)
+============================================================================================"""
+
+# 1.  Write a Python class BankAccount with attributes owner and balance, and methods deposit() and withdraw().
+# 2.  How do you implement the __str__ and __repr__ methods in a class?
+# 3.  Write a Python program to implement a class Student with class variables and instance variables.
+# 4.  How do you use @property to create a getter and setter for a private attribute?
+# 5.  Write a Python program to implement inheritance: a base class Animal with subclasses Dog and Cat.
+# 6.  How do you use super() to call a parent class method in a subclass?
+# 7.  Write a Python program to demonstrate method overriding in a subclass.
+# 8.  How do you implement multiple inheritance in Python and resolve method resolution order (MRO)?
+# 9.  Write a Python program to implement a class with @classmethod and @staticmethod.
+# 10. How do you implement operator overloading for + and == in a custom Vector class?
+# 11. Write a Python program to create a class with __len__, __getitem__, and __iter__ to make it iterable.
+# 12. How do you implement a Singleton design pattern in Python?
+# 13. Write a Python program to use __slots__ to restrict attributes and improve memory usage.
+# 14. How do you implement the __enter__ and __exit__ methods to use a class as a context manager?
+# 15. Write a Python program to demonstrate abstract classes using the abc module.
+# 16. How do you implement polymorphism using duck typing?
+# 17. Write a Python program to implement a class hierarchy for geometric shapes (Circle, Rectangle, Triangle) with an area() method.
+# 18. How do you implement a mixin class to add logging behavior to multiple classes?
+# 19. Write a Python program to implement the __eq__, __lt__, and __gt__ methods for object comparison.
+# 20. How do you use dataclasses to automatically generate __init__, __repr__, and __eq__?
+# 21. Write a Python program to implement composition vs. inheritance with a Car class using an Engine class.
+# 22. How do you use __call__ to make an object callable?
+# 23. Write a Python program to implement the iterator protocol (__iter__ and __next__) in a custom class.
+# 24. How do you implement deep copy vs. shallow copy for a custom class?
+# 25. Write a Python program to demonstrate encapsulation with name mangling using double underscore attributes.
+
+"""============================================================================================
+ Topic 13: Modules, Packages & Standard Library (Questions 301–325)
+============================================================================================"""
+
+# 1.  Write a Python program to create a module with utility functions and import it in another script.
+# 2.  How do you use the math module to compute sqrt, ceil, floor, log, and factorial?
+# 3.  Write a Python program to generate random numbers, shuffle a list, and pick a random sample using random.
+# 4.  How do you use the datetime module to get the current date/time, format it, and calculate date differences?
+# 5.  Write a Python program to use the os module to get the current directory, list files, and create directories.
+# 6.  How do you use sys.argv to accept command-line arguments?
+# 7.  Write a Python program to use the re module to validate a phone number pattern.
+# 8.  How do you use collections.Counter, defaultdict, deque, and OrderedDict with examples?
+# 9.  Write a Python program to use itertools.product, permutations, combinations, and chain.
+# 10. How do you use functools.partial, reduce, and lru_cache?
+# 11. Write a Python program to use the json module to serialize/deserialize Python objects.
+# 12. How do you use the csv module to read/write CSV files?
+# 13. Write a Python program to use time.time(), time.sleep(), and timeit to measure execution time.
+# 14. How do you use argparse to build a command-line tool with flags and arguments?
+# 15. Write a Python program to use glob to search for files matching a pattern in a directory.
+# 16. How do you use the hashlib module to compute MD5 and SHA256 hashes?
+# 17. Write a Python program to use the urllib module to make a simple HTTP GET request.
+# 18. How do you use the calendar module to print a month calendar and find weekdays?
+# 19. Write a Python program to use the statistics module to compute mean, median, mode, and stdev.
+# 20. How do you use the copy module to perform shallow and deep copies of objects?
+# 21. Write a Python program to use the string module constants (ascii_letters, digits, punctuation).
+# 22. How do you use the struct module to pack and unpack binary data?
+# 23. Write a Python program to use the textwrap module to wrap and dedent text.
+# 24. How do you use the pprint module to pretty-print nested data structures?
+# 25. Write a Python program to create a package with an __init__.py file and relative imports.
+
+"""============================================================================================
+ Topic 14: Regular Expressions (Questions 326–350)
+============================================================================================"""
+
+# 1.  Write a Python program to check if a string matches a given regex pattern using re.match().
+# 2.  How do you use re.search() to find the first occurrence of a pattern anywhere in a string?
+# 3.  Write a Python program to find all occurrences of a pattern using re.findall().
+# 4.  How do you use re.sub() to replace all occurrences of a pattern with a new string?
+# 5.  Write a Python program to validate an email address using a regular expression.
+# 6.  How do you validate a strong password (uppercase, lowercase, digit, special char, min 8 chars)?
+# 7.  Write a Python program to extract all URLs from a block of text using regex.
+# 8.  How do you use groups () in a regex to extract specific parts of a match (e.g., date components)?
+# 9.  Write a Python program to split a string by multiple delimiters using re.split().
+# 10. How do you use named groups (?P<name>) in a regex pattern?
+# 11. Write a Python program to extract all numbers (integers and floats) from a string.
+# 12. How do you use re.compile() to precompile a pattern for repeated use?
+# 13. Write a Python program to check if a string contains only alphanumeric characters.
+# 14. How do you use lookahead (?=...) and lookbehind (?<=...) assertions?
+# 15. Write a Python program to remove all HTML tags from a string using regex.
+# 16. How do you use the re.IGNORECASE flag to perform case-insensitive matching?
+# 17. Write a Python program to validate an Indian mobile number (starts with 6–9, 10 digits).
+# 18. How do you use re.MULTILINE to match patterns at the start and end of each line?
+# 19. Write a Python program to find all words that start with a capital letter in a paragraph.
+# 20. How do you use the non-greedy quantifier *? vs * in pattern matching?
+# 21. Write a Python program to extract all hashtags from a social media post.
+# 22. How do you use re.fullmatch() to ensure the entire string matches a pattern?
+# 23. Write a Python program to find duplicate words in a sentence using a back-reference (\1).
+# 24. How do you use re.finditer() to get match objects with start/end positions?
+# 25. Write a Python program to tokenize a mathematical expression into numbers and operators using regex.
+
+"""============================================================================================
+ Topic 15: Iterators, Generators & Decorators (Questions 351–375)
+============================================================================================"""
+
+# 1.  Write a Python program to implement a custom iterator class that generates squares of numbers.
+# 2.  How do you use the __iter__ and __next__ methods to build an infinite counter?
+# 3.  Write a Python generator function that yields prime numbers indefinitely.
+# 4.  How do you use the next() function and StopIteration to control a custom iterator?
+# 5.  Write a Python program to create a generator expression and compare it with a list comprehension.
+# 6.  How do you use itertools.islice() to take a finite slice from an infinite generator?
+# 7.  Write a Python program to implement a pipeline of generators to process a large data stream.
+# 8.  How do you use yield from to delegate to a sub-generator?
+# 9.  Write a Python program to implement a decorator that measures and prints function execution time.
+# 10. How do you use functools.wraps inside a decorator to preserve the original function's metadata?
+# 11. Write a Python program to implement a decorator that caches function results (memoization).
+# 12. How do you stack multiple decorators on a single function?
+# 13. Write a Python program to implement a parameterized decorator (a decorator factory).
+# 14. How do you implement a class-based decorator?
+# 15. Write a Python program to create a generator that reads a large file line by line lazily.
+# 16. How do you implement a coroutine using yield that receives and processes sent values?
+# 17. Write a Python program to use itertools.count, cycle, and repeat.
+# 18. How do you use itertools.groupby() to group sorted data by a key?
+# 19. Write a Python program to implement a generator that produces Fibonacci numbers infinitely.
+# 20. How do you convert a generator to a list, tuple, or sum on the fly?
+# 21. Write a Python program to use a decorator to enforce argument type checking.
+# 22. How do you use contextlib.contextmanager to create a simple context manager using a generator?
+# 23. Write a Python program to chain multiple generators using itertools.chain().
+# 24. How do you implement a retry decorator that re-runs a function on exception up to n times?
+# 25. Write a Python program to implement a generator-based co-routine pipeline for data processing.
+
+"""============================================================================================
+ Topic 16: Comprehensions & Functional Programming (Questions 376–400)
+============================================================================================"""
+
+# 1.  Write a Python program using a list comprehension to generate all Pythagorean triplets up to n.
+# 2.  How do you use a dict comprehension to count character frequencies in a string?
+# 3.  Write a Python program using a set comprehension to find unique vowels in a sentence.
+# 4.  How do you use a nested list comprehension to multiply two matrices?
+# 5.  Write a Python program to use map() with a lambda to convert Celsius temperatures to Fahrenheit.
+# 6.  How do you use filter() with a lambda to select words longer than 5 characters from a list?
+# 7.  Write a Python program to use reduce() to compute the product of all elements in a list.
+# 8.  How do you compose functions using functools.reduce() to build a processing pipeline?
+# 9.  Write a Python program to use zip() and map() together to add two lists element-wise.
+# 10. How do you implement a flatten function using recursion vs. list comprehension?
+# 11. Write a Python program to use sorted() with a key function to sort complex objects.
+# 12. How do you implement a group_by function using defaultdict and a key function?
+# 13. Write a Python program to use operator.itemgetter as a key for sorting a list of tuples.
+# 14. How do you use functools.partial to create specialized versions of a generic function?
+# 15. Write a Python program to implement function currying manually (returning nested lambdas).
+# 16. How do you use any() and all() with generator expressions for validation checks?
+# 17. Write a Python program to implement a memoization decorator using a dictionary cache.
+# 18. How do you chain filter(), map(), and sorted() into a single readable expression?
+# 19. Write a Python program to use itertools.starmap() to apply a function to tuples in a list.
+# 20. How do you implement a pipeline function that applies a sequence of transforms to data?
+# 21. Write a Python program to use a list comprehension with multiple if conditions.
+# 22. How do you use dict comprehension with zip() to pair two lists into a dictionary?
+# 23. Write a Python program to use a generator expression inside sum() to compute weighted averages.
+# 24. How do you use the walrus operator (:=) inside a comprehension for efficiency?
+# 25. Write a Python program to implement a declarative data transformation pipeline without explicit loops.
+
+"""============================================================================================
+ Topic 17: Data Structures — Stacks, Queues, Linked Lists & Trees (Questions 401–425)
+============================================================================================"""
+
+# 1.  Write a Python program to implement a stack using a list with push, pop, peek, and is_empty operations.
+# 2.  How do you use collections.deque to implement a stack and a queue efficiently?
+# 3.  Write a Python program to implement a queue using two stacks.
+# 4.  How do you implement a circular queue using a fixed-size list?
+# 5.  Write a Python program to implement a singly linked list with insert, delete, and display operations.
+# 6.  How do you detect a cycle in a linked list using Floyd's two-pointer algorithm?
+# 7.  Write a Python program to reverse a singly linked list iteratively and recursively.
+# 8.  How do you implement a doubly linked list with forward and backward traversal?
+# 9.  Write a Python program to implement a binary search tree (BST) with insert, search, and inorder traversal.
+# 10. How do you find the height (depth) of a binary tree using recursion?
+# 11. Write a Python program to implement level-order (BFS) traversal of a binary tree.
+# 12. How do you implement preorder, inorder, and postorder tree traversal?
+# 13. Write a Python program to check if a binary tree is balanced.
+# 14. How do you find the lowest common ancestor (LCA) of two nodes in a BST?
+# 15. Write a Python program to implement a min-heap and max-heap using the heapq module.
+# 16. How do you use heapq.nlargest() and nsmallest() to find top-k elements from a list?
+# 17. Write a Python program to implement a graph as an adjacency list and adjacency matrix.
+# 18. How do you implement Depth-First Search (DFS) on a graph using a stack and recursion?
+# 19. Write a Python program to implement Breadth-First Search (BFS) on a graph using a queue.
+# 20. How do you detect a cycle in a directed graph using DFS and coloring?
+# 21. Write a Python program to implement a priority queue using heapq.
+# 22. How do you implement a trie (prefix tree) for efficient word search and autocomplete?
+# 23. Write a Python program to find the shortest path in an unweighted graph using BFS.
+# 24. How do you implement Dijkstra's algorithm for shortest path in a weighted graph?
+# 25. Write a Python program to implement a hash table from scratch with collision handling using chaining.
+
+"""============================================================================================
+ Topic 18: Algorithms — Searching, Sorting & Recursion (Questions 426–450)
+============================================================================================"""
+
+# 1.  Write a Python program to implement linear search and binary search on a list.
+# 2.  How do you implement binary search recursively and iteratively?
+# 3.  Write a Python program to implement bubble sort and analyze its time complexity.
+# 4.  How do you implement selection sort and insertion sort?
+# 5.  Write a Python program to implement merge sort using divide and conquer.
+# 6.  How do you implement quicksort with a pivot selection strategy?
+# 7.  Write a Python program to implement heap sort using the heapq module.
+# 8.  How do you implement counting sort for non-negative integers?
+# 9.  Write a Python program to implement radix sort.
+# 10. How do you solve the Tower of Hanoi problem using recursion?
+# 11. Write a Python program to find all permutations of a string using recursion.
+# 12. How do you implement the Knapsack problem (0/1) using dynamic programming?
+# 13. Write a Python program to solve the Fibonacci problem using DP (top-down and bottom-up).
+# 14. How do you implement the longest common subsequence (LCS) algorithm?
+# 15. Write a Python program to implement the coin change problem using dynamic programming.
+# 16. How do you implement binary exponentiation to compute a^b mod m efficiently?
+# 17. Write a Python program to implement the Sieve of Eratosthenes to find all primes up to n.
+# 18. How do you implement a two-pointer technique to find pairs summing to a target in a sorted list?
+# 19. Write a Python program to implement the sliding window technique to find the maximum sum subarray of size k.
+# 20. How do you implement depth-first backtracking to solve the N-Queens problem?
+# 21. Write a Python program to find the maximum subarray sum using Kadane's algorithm.
+# 22. How do you implement topological sort of a directed acyclic graph (DAG)?
+# 23. Write a Python program to implement the matrix chain multiplication problem using DP.
+# 24. How do you implement a greedy algorithm for the activity selection problem?
+# 25. Write a Python program to implement the edit distance (Levenshtein distance) between two strings.
+
+"""============================================================================================
+ Topic 19: Concurrency — Multithreading, Multiprocessing & Async (Questions 451–475)
+============================================================================================"""
+
+# 1.  Write a Python program to create and start multiple threads using the threading module.
+# 2.  How do you use threading.Lock() to prevent race conditions in a shared counter?
+# 3.  Write a Python program to implement a producer-consumer pattern using threading and queue.Queue.
+# 4.  How do you use threading.Event to signal between threads?
+# 5.  Write a Python program to use threading.Semaphore to limit concurrent access to a resource.
+# 6.  How do you use a ThreadPoolExecutor from concurrent.futures to parallelize tasks?
+# 7.  Write a Python program to use multiprocessing.Process to spawn child processes.
+# 8.  How do you use multiprocessing.Pool.map() to parallelize a CPU-bound task?
+# 9.  Write a Python program to share data between processes using multiprocessing.Queue and Pipe.
+# 10. How do you use multiprocessing.Value and Array for shared memory between processes?
+# 11. Write a Python program to use ProcessPoolExecutor for parallel computation.
+# 12. How do you implement an async function using async def and await with asyncio?
+# 13. Write a Python program to run multiple coroutines concurrently using asyncio.gather().
+# 14. How do you use asyncio.create_task() to schedule independent coroutines?
+# 15. Write a Python program to implement an async producer-consumer pattern with asyncio.Queue.
+# 16. How do you use asyncio.sleep() as a non-blocking delay inside a coroutine?
+# 17. Write a Python program to fetch multiple URLs concurrently using aiohttp and asyncio.
+# 18. How do you handle timeouts in async operations using asyncio.wait_for()?
+# 19. Write a Python program to implement a simple async TCP server using asyncio streams.
+# 20. How do you use asyncio.Lock() to synchronize access in coroutines?
+# 21. Write a Python program to compare the performance of sequential vs. threaded vs. async approaches.
+# 22. How do you avoid deadlocks in a multithreaded program using lock ordering?
+# 23. Write a Python program to use concurrent.futures.as_completed() to handle results as they arrive.
+# 24. How do you profile and debug multithreaded programs using threading.enumerate()?
+# 25. Write a Python program to implement a rate-limiter using asyncio to throttle concurrent requests.
+
+"""============================================================================================
+ Topic 20: Advanced Python — Metaclasses, Memory, Testing & Best Practices (Questions 476–500)
+============================================================================================"""
+
+# 1.  Write a Python program to implement a metaclass that enforces all method names to be lowercase.
+# 2.  How do you use type() to dynamically create a class at runtime?
+# 3.  Write a Python program to implement __init_subclass__ to automatically register subclasses.
+# 4.  How do you use __new__ to control instance creation in a Singleton pattern?
+# 5.  Write a Python program to use the gc module to inspect and manually trigger garbage collection.
+# 6.  How do you use weakref to create weak references and avoid memory leaks?
+# 7.  Write a Python program to profile memory usage using tracemalloc.
+# 8.  How do you use the cProfile module to identify performance bottlenecks in a program?
+# 9.  Write a Python program to use line_profiler or timeit to benchmark specific lines of code.
+# 10. How do you write unit tests for a function using the unittest module?
+# 11. Write a Python program to use unittest.mock.patch to mock an external API call in a test.
+# 12. How do you use pytest fixtures to set up and tear down test environments?
+# 13. Write a Python program to test exception raising using unittest.assertRaises().
+# 14. How do you use property-based testing with the hypothesis library?
+# 15. Write a Python program to implement a context manager using __enter__ and __exit__ for DB simulation.
+# 16. How do you use __getattr__, __setattr__, and __delattr__ to intercept attribute access?
+# 17. Write a Python program to implement a descriptor class with __get__, __set__, and __delete__.
+# 18. How do you use __class_getitem__ to support generic class syntax (e.g., MyClass[int])?
+# 19. Write a Python program to enforce immutability by overriding __setattr__ to raise AttributeError.
+# 20. How do you use sys.intern to optimize memory for repeated string values?
+# 21. Write a Python program to demonstrate the difference between deep copy and shallow copy with nested objects.
+# 22. How do you use __slots__ in a class to reduce per-instance memory overhead?
+# 23. Write a Python program to implement a publish-subscribe event system using dictionaries of callbacks.
+# 24. How do you use abstract base classes (ABC) to enforce interface contracts across subclasses?
+# 25. Write a Python program that combines metaclasses, descriptors, decorators, and generators to build a mini ORM (Object-Relational Mapper) framework.
